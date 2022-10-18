@@ -1,0 +1,19 @@
+﻿@model MvcOld.Models.Product
+
+@{ 
+    ViewBag.Title = "SomeView";
+}
+
+<h2>SomeView</h2>
+
+@{ 
+    if(Model.ItemCode != 0)
+    {
+        Html.RenderPartial("Edit", Model);
+    }
+    else
+    {
+        Html.RenderAction("AddProduct", Model);
+    }
+}
+

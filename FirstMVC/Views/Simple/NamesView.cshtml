@@ -1,0 +1,16 @@
+﻿@{
+    List<string> names = new List<string>();
+    names.Add("Mayur");
+    names.Add("Sneha");
+    names.Add("Shipla");
+}
+<ul>
+    @{
+        foreach (var name  in names)
+        {
+            <li>@name</li>
+        }
+    }
+</ul>
+
+

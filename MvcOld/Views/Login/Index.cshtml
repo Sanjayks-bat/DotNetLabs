@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    string username = "admin";
+    string pwd = "nimda";
+}
+
+<h2>Login</h2>
+<hr />
+<input type="text" placeholder="Enter Username"/>
+<br />
+<input type="password" placeholder="Enter Password" />
+<br />
+<button>
+    @Html.ActionLink("Login","onLogin",new {username = username, password = pwd})
+</button>
+<br />
+<b>@ViewBag.status</b>
